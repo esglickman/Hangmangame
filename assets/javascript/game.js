@@ -1,4 +1,4 @@
-var wordGuess = ["lenovo",];
+var wordGuess = ["lenovo", "cheerio"];
 
 var letterChoices = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
     'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
@@ -74,6 +74,19 @@ document.onkeyup = function(lenovo) {
 	//	remainingGuess--;
 	}
 	
+}
+
+document.onkeyup = function(cheerio) {
+//determines what key was pressed
+  var userGuess = event.key;
+
+  if ((userGuess === "c") || (userGuess === "h") || (userGuess === "e") 
+    || (userGuess === "e") || (userGuess === "r") || (userGuess === "i") || (userGuess === "o"))  {
+
+    document.getElementById("dashes").innerHTML = userGuess;
+
+    }
+
 }
 
 
